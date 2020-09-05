@@ -6,7 +6,7 @@ RUN sudo apt-get install ripgrep -y
 #RUN wget https://github.com/gsamokovarov/jump/releases/download/v0.30.1/jump_0.30.1_amd64.deb && sudo dpkg -i jump_0.30.1_amd64.deb
 RUN sudo apt-get install fish -y
 RUN curl -fsSL https://starship.rs/install.sh -O
-RUN yes | bash install.sh
+RUN bash install.sh -y
 #RUN cargo install starship
 
 
