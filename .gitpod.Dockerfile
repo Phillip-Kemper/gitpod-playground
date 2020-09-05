@@ -11,10 +11,12 @@ RUN bash install.sh -y
 
 
 
-COPY config.fish ~/.config/fish/config.fish
+COPY config.fish /home/gitpod/.config/fish/config.fish
+
+RUN sudo cp -r /home/gitpod/.config /workspace/gitpod-playground/
 
 
-CMD [ "fish" ]
+RUN fish
 
 USER root
 
